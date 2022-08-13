@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    //wap to accept productname,productrate,quantity display totalamount.
+
+    internal class program
+    {
+        static void Main(string[])
+        {
+            int product_rate,product_quantity,total_amount;
+            string product_name;
+            Console.WriteLine("Enter product name");
+            product_name=Console.ReadLine();
+            Console.WriteLine("Enter product rate");
+            product_rate=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter product quantity");
+            product_quantity=Convert.ToInt32(console.ReadLine());
+            
+            total_amount=product_rate*product_quantity;
+            
+            Console.WriteLine("Total amount:"+total_amount );
+        }
+    }
+}
