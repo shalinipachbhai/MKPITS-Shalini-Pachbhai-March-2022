@@ -1,0 +1,50 @@
+//- create a class emplyoee having fields empno,empname,designation and salary create a constructor with no parameters and create another parameterized constructor with 4 parameters.
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp14
+{
+    class employee
+    {
+        int empno,salary;
+        string empname,designation;
+        //no parameter
+        public employee()
+        {
+            empno=12;
+            empname="shlok";
+            salary=12000;
+            designation="bihar";
+        }
+        //with parameter
+        public employee(int empno,string empname,int salary,string designation)
+        {
+            this.empno=empno;
+            this.empname=empname;
+            this.salary=salary;
+            this.designation;
+        }
+        public void display()
+        {
+            Console.WriteLine("employee number="+empno);
+            Console.WriteLine("employee name="+empname);
+            Console.WriteLine("employee salary="+salary);
+            Console.WriteLine("employee designation="+designation);
+        }
+    }
+    class program
+    {
+        static void main(string[]arg)
+        {
+            employee e1=new employee();//this will call constructor with no parameter automatically
+            e1.display();
+
+            employee e2=new employee(12,"ram",12000,"ytl");
+            //this will call parameterize constructor
+            e2.display();
+        }
+    }
+}
